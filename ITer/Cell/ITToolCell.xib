@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ITToolCell" rowHeight="60" id="Mnt-Q6-681" customClass="ITToolCell" customModule="ITer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mnt-Q6-681" id="CwZ-nf-9MV">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lV0-SP-QRa">
+                        <rect key="frame" x="10" y="17" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Wf8-fY-Od6"/>
+                            <constraint firstAttribute="width" constant="24" id="f37-tN-kXZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfe-F9-cdT">
+                        <rect key="frame" x="42" y="19.5" width="300" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="orV-B3-vEH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Bfe-F9-cdT" secondAttribute="trailing" id="Rui-Ax-gCf"/>
+                    <constraint firstItem="Bfe-F9-cdT" firstAttribute="centerY" secondItem="CwZ-nf-9MV" secondAttribute="centerY" id="TPS-MD-Pmu"/>
+                    <constraint firstItem="Bfe-F9-cdT" firstAttribute="leading" secondItem="lV0-SP-QRa" secondAttribute="trailing" constant="8" id="bbd-MR-CF5"/>
+                    <constraint firstItem="lV0-SP-QRa" firstAttribute="leading" secondItem="CwZ-nf-9MV" secondAttribute="leading" constant="10" id="crZ-C5-FHl"/>
+                    <constraint firstItem="lV0-SP-QRa" firstAttribute="centerY" secondItem="CwZ-nf-9MV" secondAttribute="centerY" id="iZd-d6-1Sk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="toolImageView" destination="lV0-SP-QRa" id="zPq-n0-MKI"/>
+                <outlet property="toolNameLabel" destination="Bfe-F9-cdT" id="R0D-fx-Qlu"/>
+            </connections>
+            <point key="canvasLocation" x="-170.5" y="-52"/>
+        </tableViewCell>
+    </objects>
+</document>

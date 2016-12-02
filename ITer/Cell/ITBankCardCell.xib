@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ITBankCardCell" id="jt4-tZ-3Xh" customClass="ITBankCardCell" customModule="ITer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jt4-tZ-3Xh" id="DeA-VO-6Fm">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OC1-fJ-aqF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6225768725093429" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXF-K8-0Wp">
+                        <rect key="frame" x="8" y="8" width="359" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="ChG-yQ-iYi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-Zc-tXR">
+                        <rect key="frame" x="8" y="60" width="359" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fLL-li-9Im"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pps-Q9-FAa">
+                        <rect key="frame" x="8" y="89" width="359" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="HnG-cJ-Ahk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OXF-K8-0Wp" firstAttribute="leading" secondItem="DeA-VO-6Fm" secondAttribute="leadingMargin" id="2xp-yU-69S"/>
+                    <constraint firstItem="pps-Q9-FAa" firstAttribute="top" secondItem="Xo8-Zc-tXR" secondAttribute="bottom" constant="8" id="4sg-1v-CFM"/>
+                    <constraint firstAttribute="bottom" secondItem="OC1-fJ-aqF" secondAttribute="bottom" id="Aol-2V-IIm"/>
+                    <constraint firstItem="Xo8-Zc-tXR" firstAttribute="leading" secondItem="DeA-VO-6Fm" secondAttribute="leadingMargin" id="Erg-zu-dlh"/>
+                    <constraint firstItem="OC1-fJ-aqF" firstAttribute="leading" secondItem="DeA-VO-6Fm" secondAttribute="leading" id="LlW-NC-0MO"/>
+                    <constraint firstItem="Xo8-Zc-tXR" firstAttribute="trailing" secondItem="DeA-VO-6Fm" secondAttribute="trailingMargin" id="O1N-kW-d8g"/>
+                    <constraint firstItem="pps-Q9-FAa" firstAttribute="leading" secondItem="DeA-VO-6Fm" secondAttribute="leadingMargin" id="QF3-On-xLP"/>
+                    <constraint firstItem="OC1-fJ-aqF" firstAttribute="top" secondItem="DeA-VO-6Fm" secondAttribute="top" id="T2L-F8-YmK"/>
+                    <constraint firstItem="pps-Q9-FAa" firstAttribute="trailing" secondItem="DeA-VO-6Fm" secondAttribute="trailingMargin" id="Tjt-n0-3qv"/>
+                    <constraint firstItem="OXF-K8-0Wp" firstAttribute="trailing" secondItem="DeA-VO-6Fm" secondAttribute="trailingMargin" id="grb-D1-XCb"/>
+                    <constraint firstItem="Xo8-Zc-tXR" firstAttribute="top" secondItem="OXF-K8-0Wp" secondAttribute="bottom" constant="8" id="i3Z-DB-KIj"/>
+                    <constraint firstItem="OXF-K8-0Wp" firstAttribute="top" secondItem="DeA-VO-6Fm" secondAttribute="topMargin" id="nVz-z2-ltr"/>
+                    <constraint firstAttribute="trailing" secondItem="OC1-fJ-aqF" secondAttribute="trailing" id="sNi-Kl-S84"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bankNameLabel" destination="Xo8-Zc-tXR" id="9Sd-jX-LYK"/>
+                <outlet property="cardNumberLabel" destination="OXF-K8-0Wp" id="qeq-oD-2ke"/>
+                <outlet property="cardTypeDesLabel" destination="pps-Q9-FAa" id="QO3-eK-lU1"/>
+            </connections>
+            <point key="canvasLocation" x="-187.5" y="-70"/>
+        </tableViewCell>
+    </objects>
+</document>

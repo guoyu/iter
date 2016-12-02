@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ITBookCell" rowHeight="80" id="UDJ-jD-4SA" customClass="ITBookCell" customModule="ITer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UDJ-jD-4SA" id="yfC-sX-kSd">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-Ge-wBx">
+                        <rect key="frame" x="8" y="5" width="50" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="9fo-vc-8Aq"/>
+                            <constraint firstAttribute="width" constant="50" id="XQN-gD-g77"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小王子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dij-o0-ZSL">
+                        <rect key="frame" x="66" y="13" width="276" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cxl-Sb-7yp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="圣埃克苏佩里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-qG-eYq">
+                        <rect key="frame" x="66" y="45" width="276" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fi1-79-m42"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hzH-qG-eYq" secondAttribute="trailing" id="0nw-jl-Hfl"/>
+                    <constraint firstItem="dij-o0-ZSL" firstAttribute="top" secondItem="yfC-sX-kSd" secondAttribute="top" constant="13" id="CBf-Rd-bNy"/>
+                    <constraint firstItem="dij-o0-ZSL" firstAttribute="leading" secondItem="D9P-Ge-wBx" secondAttribute="trailing" constant="8" id="EAt-Xf-8UY"/>
+                    <constraint firstItem="D9P-Ge-wBx" firstAttribute="centerY" secondItem="yfC-sX-kSd" secondAttribute="centerY" id="R2U-U4-Af7"/>
+                    <constraint firstItem="hzH-qG-eYq" firstAttribute="leading" secondItem="D9P-Ge-wBx" secondAttribute="trailing" constant="8" id="RJ6-qy-9sa"/>
+                    <constraint firstAttribute="bottom" secondItem="hzH-qG-eYq" secondAttribute="bottom" constant="13" id="WRe-ym-zLc"/>
+                    <constraint firstItem="D9P-Ge-wBx" firstAttribute="leading" secondItem="yfC-sX-kSd" secondAttribute="leadingMargin" id="uzr-Fd-HWp"/>
+                    <constraint firstAttribute="trailing" secondItem="dij-o0-ZSL" secondAttribute="trailing" id="wdc-9a-4cH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookAuthorLabel" destination="hzH-qG-eYq" id="G8I-4c-WXc"/>
+                <outlet property="bookCover" destination="D9P-Ge-wBx" id="ENa-hR-vLY"/>
+                <outlet property="bookNameLabel" destination="dij-o0-ZSL" id="hHb-eS-LHb"/>
+            </connections>
+            <point key="canvasLocation" x="-199.5" y="-137"/>
+        </tableViewCell>
+    </objects>
+</document>
