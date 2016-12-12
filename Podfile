@@ -9,6 +9,7 @@ target 'ITer' do
     pod 'RealmSwift'
     pod 'CardIO'
     pod 'Firebase'
+    pod 'Firebase/Auth'
 #    pod 'Fabric'
 #    pod 'TwitterKit'
 #    pod 'TwitterCore'

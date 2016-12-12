@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -163,15 +163,8 @@
 		84F4815D1DD5A9CE00CC2E9E /* ITer */ = {
 			isa = PBXGroup;
 			children = (
-				8458A82C1DDC6C5F00C03364 /* Card */,
-				84BD73DF1DDAB8DF00C7A53E /* Helper */,
-				84540CC51DD996980032DF96 /* Cell */,
-				84540CC21DD98ADA0032DF96 /* Util */,
-				84F4817C1DD5D42E00CC2E9E /* Model */,
-				84F481791DD5CA8300CC2E9E /* Network */,
-				84F481751DD5AA4900CC2E9E /* Todo */,
-				84F481761DD5AA4900CC2E9E /* Book */,
-				84F481861DD74B8400CC2E9E /* Tab */,
+				F11F01611DFE7F1100DECADE /* UI */,
+				F11F01601DFE7EF700DECADE /* Logic */,
 				84F481641DD5A9CE00CC2E9E /* Main.storyboard */,
 				84F481691DD5A9CE00CC2E9E /* LaunchScreen.storyboard */,
 				84F4815E1DD5A9CE00CC2E9E /* AppDelegate.swift */,
@@ -238,6 +231,29 @@
 			name = Tab;
 			sourceTree = "<group>";
 		};
+		F11F01601DFE7EF700DECADE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				84BD73DF1DDAB8DF00C7A53E /* Helper */,
+				84540CC21DD98ADA0032DF96 /* Util */,
+				84F4817C1DD5D42E00CC2E9E /* Model */,
+				84F481791DD5CA8300CC2E9E /* Network */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		F11F01611DFE7F1100DECADE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8458A82C1DDC6C5F00C03364 /* Card */,
+				84540CC51DD996980032DF96 /* Cell */,
+				84F481751DD5AA4900CC2E9E /* Todo */,
+				84F481761DD5AA4900CC2E9E /* Book */,
+				84F481861DD74B8400CC2E9E /* Tab */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,14 +289,13 @@
 				TargetAttributes = {
 					84F4815A1DD5A9CE00CC2E9E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3V3FM39WBR;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 84F481561DD5A9CE00CC2E9E /* Build configuration list for PBXProject "ITer" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -432,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -481,6 +497,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -509,12 +526,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D856A3008A29DD6C99D81BC3 /* Pods-ITer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3V3FM39WBR;
 				INFOPLIST_FILE = ITer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = giv.ITer1;
+				PRODUCT_BUNDLE_IDENTIFIER = giv.ITer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ITer/ITer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -526,12 +544,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F41AC163DE570D710C5191B6 /* Pods-ITer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3V3FM39WBR;
 				INFOPLIST_FILE = ITer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = giv.ITer1;
+				PRODUCT_BUNDLE_IDENTIFIER = giv.ITer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ITer/ITer-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

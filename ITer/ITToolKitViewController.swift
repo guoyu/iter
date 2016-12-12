@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class ITToolKitViewController: UIViewController {
 
@@ -19,6 +20,14 @@ class ITToolKitViewController: UIViewController {
         tableView.register(UINib(nibName: "ITToolCell", bundle: Bundle.main), forCellReuseIdentifier: "ITToolCell")
         dataSource.append(ITToolItem("书单", "tool_booklist"))
         dataSource.append(ITToolItem("银行卡", "tool_cardlist"))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        FIRAnalytics.logEvent(withName: kFIREventSelectContent, parameters: [
+            kFIRParameterContentType:"cont" as NSObject,
+            kFIRParameterItemID:"1" as NSObject
+        ])
     }
 
     override func didReceiveMemoryWarning() {
