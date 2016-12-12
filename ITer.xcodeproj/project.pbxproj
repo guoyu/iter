@@ -25,7 +25,6 @@
 		84BD73E51DDB199A00C7A53E /* ITBookDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BD73E41DDB199A00C7A53E /* ITBookDetailsCell.xib */; };
 		84BD73E71DDB1C7E00C7A53E /* ITBookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD73E61DDB1C7E00C7A53E /* ITBookDetailsViewController.swift */; };
 		84DB14B11DEE6D7800A93901 /* ITSSLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB14B01DEE6D7800A93901 /* ITSSLManager.swift */; };
-		84DB14B31DEE792F00A93901 /* 192.168.31.1.crt in Resources */ = {isa = PBXBuildFile; fileRef = 84DB14B21DEE792F00A93901 /* 192.168.31.1.crt */; };
 		84F4815F1DD5A9CE00CC2E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4815E1DD5A9CE00CC2E9E /* AppDelegate.swift */; };
 		84F481611DD5A9CE00CC2E9E /* ITAssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F481601DD5A9CE00CC2E9E /* ITAssistantViewController.swift */; };
 		84F481631DD5A9CE00CC2E9E /* ITToolKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F481621DD5A9CE00CC2E9E /* ITToolKitViewController.swift */; };
@@ -38,6 +37,7 @@
 		84F4817E1DD5D44200CC2E9E /* ITBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4817D1DD5D44200CC2E9E /* ITBook.swift */; };
 		84F481851DD7432000CC2E9E /* ITToolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F481841DD7432000CC2E9E /* ITToolItem.swift */; };
 		C2CC54F9B47F7AB88C677757 /* Pods_ITer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDF39E72100B495C64DEE44 /* Pods_ITer.framework */; };
+		F156ED991DFAA0150055EEC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F156ED981DFAA0150055EEC5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,6 @@
 		84BD73E41DDB199A00C7A53E /* ITBookDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITBookDetailsCell.xib; sourceTree = "<group>"; };
 		84BD73E61DDB1C7E00C7A53E /* ITBookDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITBookDetailsViewController.swift; sourceTree = "<group>"; };
 		84DB14B01DEE6D7800A93901 /* ITSSLManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITSSLManager.swift; sourceTree = "<group>"; };
-		84DB14B21DEE792F00A93901 /* 192.168.31.1.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 192.168.31.1.crt; sourceTree = "<group>"; };
 		84F4815B1DD5A9CE00CC2E9E /* ITer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F4815E1DD5A9CE00CC2E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F481601DD5A9CE00CC2E9E /* ITAssistantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAssistantViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		84F4817D1DD5D44200CC2E9E /* ITBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITBook.swift; sourceTree = "<group>"; };
 		84F481841DD7432000CC2E9E /* ITToolItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITToolItem.swift; sourceTree = "<group>"; };
 		D856A3008A29DD6C99D81BC3 /* Pods-ITer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ITer/Pods-ITer.debug.xcconfig"; sourceTree = "<group>"; };
+		F156ED981DFAA0150055EEC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F41AC163DE570D710C5191B6 /* Pods-ITer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ITer/Pods-ITer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,7 +163,6 @@
 		84F4815D1DD5A9CE00CC2E9E /* ITer */ = {
 			isa = PBXGroup;
 			children = (
-				84DB14B21DEE792F00A93901 /* 192.168.31.1.crt */,
 				8458A82C1DDC6C5F00C03364 /* Card */,
 				84BD73DF1DDAB8DF00C7A53E /* Helper */,
 				84540CC51DD996980032DF96 /* Cell */,
@@ -178,6 +177,7 @@
 				84F4815E1DD5A9CE00CC2E9E /* AppDelegate.swift */,
 				84F481671DD5A9CE00CC2E9E /* Assets.xcassets */,
 				84F4816C1DD5A9CE00CC2E9E /* Info.plist */,
+				F156ED981DFAA0150055EEC5 /* GoogleService-Info.plist */,
 				8458A8291DDC6BD400C03364 /* ITer-Bridging-Header.h */,
 			);
 			path = ITer;
@@ -303,7 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC30301DDDC09500095713 /* ITBankCardCell.xib in Resources */,
-				84DB14B31DEE792F00A93901 /* 192.168.31.1.crt in Resources */,
+				F156ED991DFAA0150055EEC5 /* GoogleService-Info.plist in Resources */,
 				84BD73DC1DDAB39400C7A53E /* ITBookCell.xib in Resources */,
 				84F4816B1DD5A9CE00CC2E9E /* LaunchScreen.storyboard in Resources */,
 				84BD73E51DDB199A00C7A53E /* ITBookDetailsCell.xib in Resources */,

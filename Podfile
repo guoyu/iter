@@ -8,8 +8,9 @@ target 'ITer' do
     pod 'SDWebImage', '~>3.8'
     pod 'RealmSwift'
     pod 'CardIO'
-    pod 'Fabric'
-    pod 'TwitterKit'
-    pod 'TwitterCore'
+    pod 'Firebase'
+#    pod 'Fabric'
+#    pod 'TwitterKit'
+#    pod 'TwitterCore'
 end
 
